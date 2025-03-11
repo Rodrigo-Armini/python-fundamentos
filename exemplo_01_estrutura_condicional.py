@@ -44,7 +44,23 @@ def exemplo_if_operador_e():
     print("Valor compra: ", valor_compra_sem_desconto)
     print("Percentual de desconto: ", percentual_desconto, "%")
     print("Valor desconto: ", valor_desconto)
-    print("Valor total: ", valor_total_compra)     
+    print("Valor total: ", valor_total_compra)    
+
+def verificar_numero_par():
+    numero = int(input("Digite o número: ")) 
+    if numero % 2 == 0: # se o resto da divisão é igual a 0
+    print("Par")
+    else:
+        print("Não é par")
+
+def verificar_numero_impar():
+    numero = int(input("Digite o número: "))
+    if numero % 2 !=0: # se o resto da divisão é diferente de 0
+    print("Impar")
+    else:
+        print("Não é ímpar")
 
 if __name__ == "__main__":
-    exemplo_if_operador_e()            
+    import os
+    os.system("cls")
+    verificar_numero_par()            
